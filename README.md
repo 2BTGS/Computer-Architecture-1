@@ -42,9 +42,9 @@ Once you have created the first five gates, you can move on to the final three g
 |`NegateOrIn`|This has one input bus, `in`, and one output bus, `out`. It also has an input, `z` which is used to say whether the output (`out`) matches the input (`in`) when `z` is 0, or whether the output is logical inversion of `in` (i.e. all bits of the bus have been inverted, or *not*-ed) when `z` is 1.|
 |`Shift8`|This has one input bus, `in`, and one output bus, `out`. This chip shifts each bit of the input precisely one position along to the right. So bit 1 of `in` becomes bit 0 of `out`, bit 2 of `in` becomes bit 1 of `out` etc. until finally bit 7 of in becomes bit 6 of `out`. Bit 7 of `out` is always set to zero (i.e. false).|
 
-For the final `Shift8` gate, the `.hdl` Hardware Description Language does not provide a mechanism to directly connect an input of your `CHIP` to the output of your `CHIP` without passing through another gate, nor can you directly set an output to be true of false. Therefore, you'll need to consider what logic you could use to connect the inputs to the output so that the value does not change.
+For the final `Shift8` gate, the `.hdl` Hardware Description Language does not provide a mechanism to directly connect an input of your `CHIP` to the output of your `CHIP` without passing through another gate, nor can you directly set an output to be true or false. Therefore, you'll need to consider what logic you could use to connect the inputs to the output so that the value does not change.
 
-**Note** As well as connecting the inputs and outputs of a gate to other gates (or the input and output of the `CHIP` you are designing, when defining and using a gate as a **part** of your implementation you can also specify that an input has a specific value by  using the keywords false and true, outputs can also be omitted if you do not wish to connect them to anything)
+**Note** As well as connecting the inputs and outputs of a gate to other gates (or the input and output of the `CHIP` you are designing, when defining and using a gate as a **part** of your implementation you can also specify that an input has a specific value by using the keywords `false` and `true`, outputs can also be omitted if you do not wish to connect them to anything)
 
 
 ### Predefined Gates
