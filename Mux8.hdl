@@ -1,0 +1,8 @@
+CHIP Mux8
+{
+	IN a[8], b[8], sel;
+	OUT out[8];
+
+PARTS:
+
+}

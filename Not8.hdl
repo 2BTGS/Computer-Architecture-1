@@ -1,0 +1,8 @@
+CHIP Not8
+{
+	IN in[8];
+	OUT out[8];
+
+PARTS:
+
+}

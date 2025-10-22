@@ -1,0 +1,7 @@
+CHIP ZeroOrIn
+{
+	IN in[8], z;
+	OUT out[8];
+PARTS:
+	
+}

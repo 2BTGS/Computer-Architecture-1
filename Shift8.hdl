@@ -1,0 +1,8 @@
+CHIP Shift8
+{
+	IN in[8];
+	OUT out[8], carryOut;
+
+PARTS:
+
+}

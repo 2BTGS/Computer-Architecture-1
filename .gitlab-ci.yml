@@ -1,0 +1,16 @@
+stages:
+    - test
+
+test-code:
+    stage: test
+    tags:
+        - comp1056_2025_coursework_01_assessor
+    artifacts:
+        name: "$CI_COMMIT_REF_NAME"
+        when: on_success
+        expire_in: 1 week
+        paths:
+            - log/
+    script:
+        - run_test
+
