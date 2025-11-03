@@ -3,5 +3,7 @@ CHIP NegateOrIn
 	IN in[8], z;
 	OUT out[8];
 PARTS:	
-	
+	Not8(in=in, out=notIn);
+
+	Mux8(a=in, b=notIn, sel=z, out=out);
 }
